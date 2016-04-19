@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aaron.animacion.Principal"
+    tools:showIn="@layout/activity_principal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/iv"
+        android:src="@mipmap/ic_launcher1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Girar"
+        android:id="@+id/btnGirar"
+        android:layout_below="@+id/iv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="53dp"
+        android:onClick="onClick" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trasladar"
+        android:id="@+id/btnTrasladar"
+        android:onClick="onClick"
+        android:layout_marginTop="48dp"
+        android:layout_below="@+id/btnGirar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ampliar"
+        android:id="@+id/btnAmpliar"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/btnGirar"
+        android:layout_alignLeft="@+id/iv"
+        android:layout_alignStart="@+id/iv" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transparencia"
+        android:id="@+id/btnTrans"
+        android:onClick="onClick"
+        android:layout_alignTop="@+id/btnTrasladar"
+        android:layout_alignLeft="@+id/iv"
+        android:layout_alignStart="@+id/iv" />
+</RelativeLayout>
